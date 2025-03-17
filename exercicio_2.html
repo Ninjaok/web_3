@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 2</title>
+
+    <script>
+        function imprimir(i) {
+            const container = document.getElementById("numeros");
+            const p = document.createElement("p");
+            p.textContent = i;
+            container.appendChild(p);
+        }
+        function exibirNumerosAtraso() {
+            for (let i = 1; i <= 100; i++) {
+                setTimeout(() => imprimir(i), i * 100);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Exercicio 2</h1>
+    <div id="numeros"></div>
+
+    <script>
+        exibirNumerosAtraso();
+    </script>
+</body>
+
+</html>

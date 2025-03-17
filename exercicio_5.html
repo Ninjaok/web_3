@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 5</title>
+
+    <script>
+        function Exercicio5() {
+            const p = document.createElement("p");
+            let data = new Date(); // Cria um objeto Date com a data e hora atuais
+
+            // Formata a data para algo mais legível
+            let dia = data.getDate();
+            let mes = data.getMonth() + 1; // Janeiro é 0, então somamos 1
+            let ano = data.getFullYear();
+            let hora = data.getHours();
+            let minuto = data.getMinutes();
+            let segundo = data.getSeconds();
+
+            // Define o texto que será exibido no parágrafo
+            p.textContent = "Data: " + dia + "/" + mes + "/" + ano +
+                " Hora: " + hora + ":" + minuto + ":" + segundo;
+
+            // Adiciona o parágrafo ao corpo da página
+            document.body.appendChild(p);
+        }
+    </script>
+</head>
+<body>
+<h2>Exercicio 5</h2>
+<div id="numeros"></div>
+<script>
+    Exercicio5()
+</script>
+</body>
+</html>

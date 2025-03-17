@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 6</title>
+    <style>
+        .circulo {
+            width: 100px;       /* Largura do círculo */
+            height: 100px;      /* Altura do círculo */
+            background-color: red; /* Cor de fundo inicial */
+            border-radius: 50%;  /* Torna o elemento um círculo */
+            margin: 20px auto;   /* Centraliza o círculo na página */
+        }
+    </style>
+</head>
+<body>
+
+<button type="button" onClick="alterarCor('red')">Vermelho</button>
+<button type="button" onClick="alterarCor('green')">Verde</button>
+<button type="button" onClick="alterarCor('yellow')">Amarelo</button>
+
+<!-- O círculo será exibido aqui -->
+<div id="circulo" class="circulo"></div>
+
+<script>
+    // Função para alterar a cor do círculo
+    function alterarCor(cor) {
+        var circulo = document.getElementById("circulo");
+        circulo.style.backgroundColor = cor;  // Altera a cor de fundo
+    }
+</script>
+
+</body>
+</html>

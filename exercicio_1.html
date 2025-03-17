@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 1</title>
+
+    <script>
+        function exibirNumeros() {
+            const container = document.getElementById("numeros");
+            for (let i = 1; i <= 100; i++) {
+                const p = document.createElement("p");
+                p.textContent = i;
+                container.appendChild(p);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Exercicio 1</h1>
+    <div id="numeros"></div>
+
+    <script>
+        exibirNumeros();
+    </script>
+</body>
+
+</html>

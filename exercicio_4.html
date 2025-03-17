@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 4</title>
+
+    <script>
+        function EscolherAlert(min, max) {
+            const p = document.createElement("p");
+            let result = ''; // Variável para acumular os números gerados
+            for (let i = 0; i < 10; i++) {
+                // Gerar um número aleatório entre min e max
+                let num = Math.floor(Math.random() * (max - min + 1)) + min;
+                result += num + ' '; // Adiciona o número gerado ao resultado
+            }
+            alert(result);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Exercicio 4</h1>
+    <div id="numeros"></div>
+
+    <script>
+        EscolherAlert(1, 100); // Provide min and max values
+    </script>
+</body>
+
+</html>

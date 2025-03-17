@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 3</title>
+
+    <script>
+        function Exercicio3() {
+            let num1 = Math.floor(Math.random() * 100) + 1;
+            let num2 = Math.floor(Math.random() * 100) + 1;
+
+            if (num1 <= num2) {
+                return Escolher(num1, num2);
+            } else {
+                return Escolher(num2, num1);
+            }
+        }
+
+        function Escolher(min, max) {
+            const p = document.createElement("p");
+            let result = '';
+            for (let i = 0; i < 10; i++) {
+
+                let num = Math.floor(Math.random() * (max - min + 1)) + min;
+                result += num + ' ';
+            }
+            p.textContent = result;
+            document.getElementById("numeros").appendChild(p);
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Exercicio 3</h1>
+    <div id="numeros"></div>
+
+    <script>
+        Exercicio3();
+    </script>
+</body>
+
+</html>
