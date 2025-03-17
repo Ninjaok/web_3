@@ -1,10 +1,10 @@
 # Execício 3 - HTML e CSS
 
-**Universidade:** [Universidade Europeia](https://www.europeia.pt/)
+**Universidade:** [Universidade Europeia](https://www.europeia.pt/)  
 **Faculdade:** [IADE - Faculdade de Design, Tecnologia e Comunicação](https://www.iade.europeia.pt/)  
-**Curso:** [Engenharia Informática](https://www.iade.europeia.pt/licenciaturas/engenharia-informatica/)
-**Disciplina:** Programação Web
-**Professor:** Fernando Pinho Marson
+**Curso:** [Engenharia Informática](https://www.iade.europeia.pt/licenciaturas/engenharia-informatica/)  
+**Disciplina:** Programação Web  
+**Professor:** Fernando Pinho Marson  
 
 ## Objetivo da Atividade
 
